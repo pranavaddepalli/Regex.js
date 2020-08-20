@@ -41,14 +41,14 @@ var regexEngine = function(regex, string) {
       }
       // if no conditions have been met, there is no match -- return false
       return false;
-    };
+    }
   
     // lazy implementation to handle the * case
     function matchStar(starChar, regexCounter, stringCounter) {
       // * does not need to consume any characters if it can be matched from the start
       if (matchFromHere(regexCounter, stringCounter)) {
         return true;
-      };
+      }
       // if consuming 0 characters fails, continue consuming one character at a time and check if the regex matches
       stringCounter++;
       while (stringCounter !== string.length && (string[stringCounter] === starChar || starChar === '.')) {
@@ -59,7 +59,7 @@ var regexEngine = function(regex, string) {
       }
       // if no matches found then return false
       return false;
-    };
+    }
   
     // greedy implementation to handle the + case. 
     // consume every character and match. if it fails, then repeat with one less character until a match is found or one character remains
@@ -96,4 +96,3 @@ var regexEngine = function(regex, string) {
     
     return match();
   };
-  
