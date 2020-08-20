@@ -1,0 +1,59 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Regex.js Demo</title>
+
+</head>
+
+<body>
+  <script src="main.js"></script>
+  <div>
+    <p id="title">Regex.js Demo</p>
+  
+    <form>
+      <textarea name="Text" id="formText" placeholder="Text"></textarea><br><br>
+      <textarea name="Regex" id="formRegex" placeholder="Regex Pattern"></textarea><br><br>
+      <input type="button" id="matchButton" value="Match" />
+    </form>
+    
+    <p id="matchFound" hidden=true>
+    A match was found
+    </p>
+    
+    <p id="noMatchFound" hidden=false> 
+    No match was found
+    </p>
+  
+  </div>
+  
+  <style>
+  body {
+    background: #20262E;
+    padding: 20px;
+    font-family: Helvetica;
+    font-size: 15px;
+    text-align: center;
+    color: #fff;
+  }
+  
+  #title {
+    font-size: 25px;
+  }
+  
+  #matchButton {
+    background: #0084ff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 14px;
+    font-size: 15px;
+    color: #fff;
+  }
+  
+  
+  </style>
+</body>
+</html>
+
