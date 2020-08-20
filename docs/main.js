@@ -1,3 +1,6 @@
+window.onload = function(){ 
+
+
 var button = document.getElementById("matchButton");
 
 button.onclick = function() {
@@ -117,3 +120,4 @@ var regexEngine = function(regex, string) {
     
     return match();
   };
+};
